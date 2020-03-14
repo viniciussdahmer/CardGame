@@ -24,6 +24,7 @@ public class DrawCards : MonoBehaviour
 
             GameObject enemyCard = Instantiate(cards[Random.Range(0, cards.Count)], new Vector3(0, 0, 0), Quaternion.identity);
             enemyCard.transform.SetParent(EnemyArea.transform, false);
+            enemyCard.tag = "EnemyCard";
         }
     }
 }
