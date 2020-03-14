@@ -10,6 +10,7 @@ public class DrawCards : MonoBehaviour
     public GameObject EnemyArea;
 
     private List<GameObject> cards = new List<GameObject>();
+    private bool wasClicked = false;
 
     void Start()
     {
@@ -18,6 +19,13 @@ public class DrawCards : MonoBehaviour
     }
 
     public void OnClick() {
+        if (!wasClicked) {
+            DrawAllCards();
+            wasClicked = true;
+        }
+    }
+
+    private void DrawAllCards() {
         for (var i = 0; i < 5; i++) {
             GameObject playerCard = Instantiate(cards[Random.Range(0, cards.Count)], new Vector3(0, 0, 0), Quaternion.identity);
             playerCard.transform.SetParent(PlayerArea.transform, false);
