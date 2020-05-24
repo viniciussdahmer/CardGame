@@ -5,11 +5,11 @@ using UnityEngine;
 public class DragDrop : MonoBehaviour
 {
     public GameObject Canvas;
-    private bool isDragging = false;
-    private bool isOverDropZone = false;
-    private GameObject dropZone;
-    private GameObject startParent;
-    private Vector2 startPosition;
+    private bool _isDragging = false;
+    private GameObject _dropZone;
+    private GameObject _startParent;
+    private GameObject _card;
+    private Vector2 _startPosition;
 
     private void Awake() {
         Canvas = GameObject.Find("Main Canvas");
@@ -17,35 +17,46 @@ public class DragDrop : MonoBehaviour
 
     void Update()
     {
-        if (isDragging) {
+        if (_isDragging) {
             transform.position = new Vector2(Input.mousePosition.x, Input.mousePosition.y);
             transform.SetParent(Canvas.transform, true);
         }
     }
 
     private void OnCollisionEnter2D(Collision2D collision) {
-        isOverDropZone = true;
-        dropZone = collision.gameObject;
+        _dropZone = collision.gameObject;
     }
     
     private void OnCollisionExit2D(Collision2D collision) {
-        isOverDropZone = false;
-        dropZone = null;
+        _dropZone = null;
     }
 
     public void StartDrag() {
-        startParent = transform.parent.gameObject;
-        startPosition = transform.position;
-        isDragging = true;
+        _startParent = transform.parent.gameObject;
+        _startPosition = transform.position;
+        _card = transform.gameObject;
+        _isDragging = true;
     }
 
     public void EndDrag() {
-        isDragging = false;
-        if (isOverDropZone) {
-            transform.SetParent(dropZone.transform, false);
-        } else {
-            transform.position = startPosition;
-            transform.SetParent(startParent.transform, false);
+        _isDragging = false;
+        PositionCard();
+    }
+
+    private void PositionCard()
+    {
+        if (_card.CompareTag("EnemyCard") && _dropZone != null && _dropZone.CompareTag("EnemyDropZone"))
+        {
+            transform.SetParent(_dropZone.transform, false);
+        }
+        else if (!_card.CompareTag("EnemyCard") && _dropZone != null && !_dropZone.CompareTag("EnemyDropZone"))
+        {
+            transform.SetParent(_dropZone.transform, false);
+        }
+        else
+        {
+            transform.position = _startPosition;
+            transform.SetParent(_startParent.transform, false);
         }
     } 
 }

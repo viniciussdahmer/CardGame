@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - EnemyCard
+  - PlayerDropZone
+  - EnemyDropZone
   layers:
   - Default
   - TransparentFX
