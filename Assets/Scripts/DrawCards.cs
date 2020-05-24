@@ -12,6 +12,8 @@ public class DrawCards : MonoBehaviour
     private List<GameObject> cards = new List<GameObject>();
     private bool wasClicked = false;
 
+    private const int MaxNumberOfCardsToDrawn = 5;
+
     void Start()
     {
         cards.Add(Card1);
@@ -26,13 +28,19 @@ public class DrawCards : MonoBehaviour
     }
 
     private void DrawAllCards() {
-        for (var i = 0; i < 5; i++) {
-            GameObject playerCard = Instantiate(cards[Random.Range(0, cards.Count)], new Vector3(0, 0, 0), Quaternion.identity);
+        for (var i = 0; i < MaxNumberOfCardsToDrawn; i++)
+        {
+            GameObject playerCard = CreateCard();
             playerCard.transform.SetParent(PlayerArea.transform, false);
 
-            GameObject enemyCard = Instantiate(cards[Random.Range(0, cards.Count)], new Vector3(0, 0, 0), Quaternion.identity);
+            GameObject enemyCard = CreateCard();
             enemyCard.transform.SetParent(EnemyArea.transform, false);
             enemyCard.tag = "EnemyCard";
         }
+    }
+
+    private GameObject CreateCard()
+    {
+        return Instantiate(cards[Random.Range(0, cards.Count)], new Vector3(0, 0, 0), Quaternion.identity);
     }
 }
