@@ -31,11 +31,17 @@ public class DragDrop : MonoBehaviour
         _dropZone = null;
     }
 
-    public void StartDrag() {
-        _startParent = transform.parent.gameObject;
-        _startPosition = transform.position;
-        _card = transform.gameObject;
-        _isDragging = true;
+    public void StartDrag()
+    {
+        if (IsParentADropZone())
+        {
+            _isDragging = false;
+        }
+        else
+        {
+            AssignCardAttributes();
+            _isDragging = true;
+        }
     }
 
     public void EndDrag() {
@@ -58,5 +64,19 @@ public class DragDrop : MonoBehaviour
             transform.position = _startPosition;
             transform.SetParent(_startParent.transform, false);
         }
-    } 
+    }
+
+    private bool IsParentADropZone()
+    {
+        var parent = transform.parent;
+        return parent.CompareTag("EnemyDropZone") || parent.CompareTag("PlayerDropZone");
+    }
+
+    private void AssignCardAttributes()
+    {
+        var localTransform = transform;
+        _startParent = localTransform.parent.gameObject;
+        _startPosition = localTransform.position;
+        _card = localTransform.gameObject;
+    }
 }

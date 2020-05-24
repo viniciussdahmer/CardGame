@@ -10,7 +10,7 @@ public class DrawCards : MonoBehaviour
     public GameObject EnemyArea;
 
     private List<GameObject> cards = new List<GameObject>();
-    private bool wasClicked = false;
+    private bool _wasClicked = false;
     
     private const int MaxCardsToBeDrawn = 5;
 
@@ -21,9 +21,9 @@ public class DrawCards : MonoBehaviour
     }
 
     public void OnClick() {
-        if (!wasClicked) {
+        if (!_wasClicked) {
             DrawAllCards();
-            wasClicked = true;
+            _wasClicked = true;
         }
     }
 
