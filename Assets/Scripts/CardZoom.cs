@@ -5,7 +5,6 @@ using UnityEngine;
 public class CardZoom : MonoBehaviour
 {
     public GameObject Canvas;
-
     private GameObject zoomCard;
 
     public void Awake() {
@@ -29,7 +28,7 @@ public class CardZoom : MonoBehaviour
     }
 
     private bool IsAnEnemyCard() {
-        return gameObject.tag == "EnemyCard" ? true : false;
+        return gameObject.CompareTag("EnemyCard") ? true : false;
     }
 
 }
