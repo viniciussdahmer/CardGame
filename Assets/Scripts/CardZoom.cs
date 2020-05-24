@@ -29,7 +29,7 @@ public class CardZoom : MonoBehaviour
     }
 
     private bool IsAnEnemyCard() {
-        return gameObject.CompareTag("EnemyCard") ? true : false;
+        return gameObject.tag == "EnemyCard" ? true : false;
     }
 
 }
