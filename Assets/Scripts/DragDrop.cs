@@ -51,11 +51,8 @@ public class DragDrop : MonoBehaviour
 
     private void PositionCard()
     {
-        if (_card.CompareTag("EnemyCard") && _dropZone != null && _dropZone.CompareTag("EnemyDropZone"))
-        {
-            transform.SetParent(_dropZone.transform, false);
-        }
-        else if (!_card.CompareTag("EnemyCard") && _dropZone != null && !_dropZone.CompareTag("EnemyDropZone"))
+        if ((_card.CompareTag("EnemyCard") && _dropZone != null && _dropZone.CompareTag("EnemyDropZone")) ||
+            (_card.CompareTag("PlayerCard") && _dropZone != null && _dropZone.CompareTag("PlayerDropZone")))
         {
             transform.SetParent(_dropZone.transform, false);
         }

@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e227aebe-48d8-4867-9f10-0c01130a9e4b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Card Game/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Card Game/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Card Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Card Game/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DragDrop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DragDrop.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DrawCards.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DrawCards.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +94,8 @@
       <updated>1584185792244</updated>
       <workItem from="1584185795758" duration="48000" />
       <workItem from="1590277782217" duration="6880000" />
-      <workItem from="1590355608294" duration="2554000" />
+      <workItem from="1590355608294" duration="3193000" />
+      <workItem from="1590368638048" duration="517000" />
     </task>
     <servers />
   </component>
@@ -175,10 +175,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1590282911143" />
-    <state x="461" y="167" key="SettingsEditor" timestamp="1590283959202">
+    <state x="461" y="167" key="SettingsEditor" timestamp="1590368947728">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1590283959202" />
+    <state x="461" y="167" key="SettingsEditor/0.0.1920.1050@0.0.1920.1050" timestamp="1590368947728" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1590283309862">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -187,5 +187,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1590278938262" />
+    <state x="603" y="123" width="714" height="804" key="find.popup" timestamp="1590368916068">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="603" y="123" width="714" height="804" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1590368916068" />
   </component>
 </project>

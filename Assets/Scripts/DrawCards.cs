@@ -31,6 +31,7 @@ public class DrawCards : MonoBehaviour
         for (var i = 0; i < MaxCardsToBeDrawn; i++) {
             GameObject playerCard = CreateCard();
             playerCard.transform.SetParent(PlayerArea.transform, false);
+            playerCard.tag = "PlayerCard";
 
             GameObject enemyCard = CreateCard();
             enemyCard.transform.SetParent(EnemyArea.transform, false);
