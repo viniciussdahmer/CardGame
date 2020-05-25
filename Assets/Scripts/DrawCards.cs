@@ -1,5 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 public class DrawCards : MonoBehaviour
@@ -27,11 +26,15 @@ public class DrawCards : MonoBehaviour
         }
     }
 
-    private void DrawAllCards() {
+    private void DrawAllCards()
+    {
+        GameObject deckCounterText = GameObject.Find("DeckCounterText");
+        DeckCounter deckCounterScript = deckCounterText.GetComponent<DeckCounter>();
         for (var i = 0; i < MaxCardsToBeDrawn; i++) {
             GameObject playerCard = CreateCard();
             playerCard.transform.SetParent(PlayerArea.transform, false);
             playerCard.tag = "PlayerCard";
+            deckCounterScript.UpdateNumberOfCardsInTheDeck(1);
 
             GameObject enemyCard = CreateCard();
             enemyCard.transform.SetParent(EnemyArea.transform, false);

@@ -19,6 +19,7 @@
         </e>
         <e p="Scripts" t="Include">
           <e p="CardZoom.cs" t="Include" />
+          <e p="DeckCounter.cs" t="Include" />
           <e p="DragDrop.cs" t="Include" />
           <e p="DrawCards.cs" t="Include" />
         </e>
