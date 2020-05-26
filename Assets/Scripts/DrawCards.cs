@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DrawCards : MonoBehaviour
 {
@@ -47,7 +48,9 @@ public class DrawCards : MonoBehaviour
     {
         playerCard.transform.SetParent(PlayerArea.transform, false);
         playerCard.tag = PlayerCardTag;
+        playerCard.GetComponent<Image>().color = UnityEngine.Color.green;
         enemyCard.transform.SetParent(EnemyArea.transform, false);
         enemyCard.tag = EnemyCardTag;
+        enemyCard.GetComponent<Image>().color = UnityEngine.Color.red;
     }
 }
