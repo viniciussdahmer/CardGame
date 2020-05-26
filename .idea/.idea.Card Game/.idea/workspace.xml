@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e227aebe-48d8-4867-9f10-0c01130a9e4b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Card Game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Card Game/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Card Game/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Card Game/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Card Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Card Game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Card1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Card1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Card2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Card2.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/DrawCards.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DrawCards.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/UnityConnectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,8 +38,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/CardZoom.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DragDrop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UpdateDeckCount.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DrawCards.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DeckCounter.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DrawCards.cs" />
       </list>
     </option>
   </component>
@@ -100,6 +102,7 @@
       <workItem from="1590277782217" duration="6880000" />
       <workItem from="1590355608294" duration="3193000" />
       <workItem from="1590368638048" duration="4763000" />
+      <workItem from="1590453750722" duration="2540000" />
     </task>
     <servers />
   </component>
@@ -191,10 +194,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1590278938262" />
-    <state x="603" y="123" width="714" height="804" key="find.popup" timestamp="1590368916068">
+    <state x="603" y="123" width="714" height="804" key="find.popup" timestamp="1590454689065">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state x="603" y="123" width="714" height="804" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1590368916068" />
+    <state x="603" y="123" width="714" height="804" key="find.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1590454689065" />
     <state x="616" y="243" width="672" height="677" key="run.anything.popup" timestamp="1590372868654">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

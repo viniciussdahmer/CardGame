@@ -1,22 +1,22 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
 public class DrawCards : MonoBehaviour
 {
-    public GameObject Card1;
-    public GameObject Card2;
     public GameObject PlayerArea;
     public GameObject EnemyArea;
+    public GameObject Card;
 
-    private List<GameObject> cards = new List<GameObject>();
     private bool _wasClicked = false;
-    
+    private static readonly int Color = Shader.PropertyToID("_Color");
     private const int MaxCardsToBeDrawn = 5;
+
+    private const String PlayerCardTag = "PlayerCard";
+    private const String EnemyCardTag = "EnemyCard";
 
     void Start()
     {
-        cards.Add(Card1);
-        cards.Add(Card2);
+        
     }
 
     public void OnClick() {
@@ -32,18 +32,22 @@ public class DrawCards : MonoBehaviour
         DeckCounter deckCounterScript = deckCounterText.GetComponent<DeckCounter>();
         for (var i = 0; i < MaxCardsToBeDrawn; i++) {
             GameObject playerCard = CreateCard();
-            playerCard.transform.SetParent(PlayerArea.transform, false);
-            playerCard.tag = "PlayerCard";
-            deckCounterScript.UpdateNumberOfCardsInTheDeck(1);
-
             GameObject enemyCard = CreateCard();
-            enemyCard.transform.SetParent(EnemyArea.transform, false);
-            enemyCard.tag = "EnemyCard";
+            AssignPropertiesToCards(playerCard, enemyCard);
+            deckCounterScript.UpdateNumberOfCardsInTheDeck(1);
         }
     }
 
     private GameObject CreateCard()
     {
-        return Instantiate(cards[Random.Range(0, cards.Count)], new Vector3(0, 0, 0), Quaternion.identity);
+        return Instantiate(Card, new Vector3(0, 0, 0), Quaternion.identity);
+    }
+
+    private void AssignPropertiesToCards(GameObject playerCard, GameObject enemyCard)
+    {
+        playerCard.transform.SetParent(PlayerArea.transform, false);
+        playerCard.tag = PlayerCardTag;
+        enemyCard.transform.SetParent(EnemyArea.transform, false);
+        enemyCard.tag = EnemyCardTag;
     }
 }
