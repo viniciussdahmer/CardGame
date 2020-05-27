@@ -12,9 +12,6 @@ public class DrawCards : MonoBehaviour
     private static readonly int Color = Shader.PropertyToID("_Color");
     private const int MaxCardsToBeDrawn = 5;
 
-    private const String PlayerCardTag = "PlayerCard";
-    private const String EnemyCardTag = "EnemyCard";
-
     void Start()
     {
         
@@ -33,24 +30,16 @@ public class DrawCards : MonoBehaviour
         DeckCounter deckCounterScript = deckCounterText.GetComponent<DeckCounter>();
         for (var i = 0; i < MaxCardsToBeDrawn; i++) {
             GameObject playerCard = CreateCard();
+            playerCard.GetComponent<Card>().SetAttributes(true, PlayerArea);
+
             GameObject enemyCard = CreateCard();
-            AssignPropertiesToCards(playerCard, enemyCard);
+            enemyCard.GetComponent<Card>().SetAttributes(false, EnemyArea);
+
             deckCounterScript.UpdateNumberOfCardsInTheDeck(1);
         }
     }
-
     private GameObject CreateCard()
     {
         return Instantiate(Card, new Vector3(0, 0, 0), Quaternion.identity);
-    }
-
-    private void AssignPropertiesToCards(GameObject playerCard, GameObject enemyCard)
-    {
-        playerCard.transform.SetParent(PlayerArea.transform, false);
-        playerCard.tag = PlayerCardTag;
-        playerCard.GetComponent<Image>().color = UnityEngine.Color.green;
-        enemyCard.transform.SetParent(EnemyArea.transform, false);
-        enemyCard.tag = EnemyCardTag;
-        enemyCard.GetComponent<Image>().color = UnityEngine.Color.red;
     }
 }
