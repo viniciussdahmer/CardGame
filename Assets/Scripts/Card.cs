@@ -1,13 +1,20 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
-public class CardAttributes : MonoBehaviour
+public class Card : MonoBehaviour
 {
     private int _attack;
+    private int _life;
+    
     public Text attackText;
+    public Text lifeText;
+    
     void Start()
     {
         _attack = Random.Range(1, 10);
+        _life = Random.Range(1, 15);
         SetCardVisualProperties();
     }
 
@@ -19,5 +26,7 @@ public class CardAttributes : MonoBehaviour
     private void SetCardVisualProperties()
     {
         attackText.text = _attack.ToString();
+        lifeText.text = _life.ToString();
     }
+
 }
