@@ -20,6 +20,10 @@ public class CardZoom : MonoBehaviour
 
             RectTransform rect = zoomCard.GetComponent<RectTransform>();
             rect.sizeDelta = new Vector2(162, 240);
+
+            CardAttributes test = gameObject.GetComponent<CardAttributes>();
+            int attackMaFriend = test.getAttack();
+            Debug.Log("Attack = " + attackMaFriend);
         }
     }
 
