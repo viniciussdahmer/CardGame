@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e227aebe-48d8-4867-9f10-0c01130a9e4b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Card Game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Card Game/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Card Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Card Game/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Card.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CardAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CardAttributes.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/CardZoom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CardZoom.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -104,7 +103,7 @@
       <workItem from="1590355608294" duration="3193000" />
       <workItem from="1590368638048" duration="4763000" />
       <workItem from="1590453750722" duration="3260000" />
-      <workItem from="1590539053898" duration="465000" />
+      <workItem from="1590539053898" duration="2022000" />
     </task>
     <servers />
   </component>
