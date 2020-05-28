@@ -18,7 +18,7 @@
           </e>
         </e>
         <e p="Scripts" t="Include">
-          <e p="CardAttributes.cs" t="Include" />
+          <e p="Card.cs" t="Include" />
           <e p="CardZoom.cs" t="Include" />
           <e p="DeckCounter.cs" t="Include" />
           <e p="DragDrop.cs" t="Include" />

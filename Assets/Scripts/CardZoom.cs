@@ -21,7 +21,7 @@ public class CardZoom : MonoBehaviour
             rect.sizeDelta = new Vector2(162, 240);
             
             // For debug purposes
-            CardAttributes test = gameObject.GetComponent<CardAttributes>();
+            Card test = gameObject.GetComponent<Card>();
             int attack = test.GetAttack();
             Debug.Log("Attack = " + attack);
         }

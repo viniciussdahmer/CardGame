@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e227aebe-48d8-4867-9f10-0c01130a9e4b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Card Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Card Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Card.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Card.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CardAttributes.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CardAttributes.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CardZoom.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CardZoom.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Card.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Card.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DrawCards.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DrawCards.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +22,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CardAttributes.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Card.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DeckCounter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Prefabs/Card.prefab" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
@@ -37,9 +36,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DragDrop.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/UpdateDeckCount.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DeckCounter.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DrawCards.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CardAttributes.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CardZoom.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Card.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DrawCards.cs" />
       </list>
     </option>
   </component>
@@ -103,7 +103,7 @@
       <workItem from="1590355608294" duration="3193000" />
       <workItem from="1590368638048" duration="4763000" />
       <workItem from="1590453750722" duration="3260000" />
-      <workItem from="1590539053898" duration="2022000" />
+      <workItem from="1590539053898" duration="4998000" />
     </task>
     <servers />
   </component>
@@ -183,6 +183,10 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="92" y="92" width="1736" height="866" key="DiffContextDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1590282911143" />
+    <state x="670" y="205" key="RiderGenerateDialog" timestamp="1590543286776">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="670" y="205" key="RiderGenerateDialog/0.0.1920.1050@0.0.1920.1050" timestamp="1590543286776" />
     <state x="461" y="167" key="SettingsEditor" timestamp="1590368947728">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
@@ -203,5 +207,9 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="616" y="243" width="672" height="677" key="run.anything.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1590372868654" />
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup" timestamp="1590542284977">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="623" y="227" width="672" height="678" key="search.everywhere.popup/0.0.1920.1050@0.0.1920.1050" timestamp="1590542284977" />
   </component>
 </project>
