@@ -44,11 +44,6 @@ public class Card : MonoBehaviour
         SetCardVisualProperties();
     }
 
-    public int GetAttack()
-    {
-        return _attack;
-    }
-
     private void SetCardVisualProperties()
     {
         attackText.text = _attack.ToString();
