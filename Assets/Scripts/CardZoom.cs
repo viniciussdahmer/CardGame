@@ -3,7 +3,7 @@
 public class CardZoom : MonoBehaviour
 {
     public GameObject Canvas;
-    private GameObject zoomCard;
+    private GameObject _zoomCard;
 
     public void Awake() {
         Canvas = GameObject.Find("Main Canvas");
@@ -17,17 +17,17 @@ public class CardZoom : MonoBehaviour
     }
     
     public void OnHoverExit() {
-        Destroy(zoomCard);
+        Destroy(_zoomCard);
     }
 
     private void ZoomCard()
     {
-        zoomCard = Instantiate(gameObject, new Vector2(Input.mousePosition.x, Input.mousePosition.y + 170),
+        _zoomCard = Instantiate(gameObject, new Vector2(Input.mousePosition.x, Input.mousePosition.y + 170),
             Quaternion.identity);
-        zoomCard.transform.SetParent(Canvas.transform, false);
-        zoomCard.layer = LayerMask.NameToLayer("Zoom");
+        _zoomCard.transform.SetParent(Canvas.transform, false);
+        _zoomCard.layer = LayerMask.NameToLayer("Zoom");
 
-        RectTransform rect = zoomCard.GetComponent<RectTransform>();
+        RectTransform rect = _zoomCard.GetComponent<RectTransform>();
         rect.sizeDelta = new Vector2(162, 240);
 
         // For debug purposes
