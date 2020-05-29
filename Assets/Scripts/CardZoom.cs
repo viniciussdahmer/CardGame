@@ -10,7 +10,7 @@ public class CardZoom : MonoBehaviour
     }
 
     public void OnHoverEnter() {
-        if (!IsAnEnemyCard())
+        if ((IsAnEnemyCard() && !IsCardOverAnEnemyArea()) || !IsAnEnemyCard())
         {
             ZoomCard();
         }
@@ -22,8 +22,7 @@ public class CardZoom : MonoBehaviour
 
     private void ZoomCard()
     {
-        _zoomCard = Instantiate(gameObject, new Vector2(Input.mousePosition.x, Input.mousePosition.y + 170),
-            Quaternion.identity);
+        _zoomCard = CreateZoomCard();
         _zoomCard.transform.SetParent(Canvas.transform, false);
         _zoomCard.layer = LayerMask.NameToLayer("Zoom");
 
@@ -33,6 +32,17 @@ public class CardZoom : MonoBehaviour
 
     private bool IsAnEnemyCard() {
         return gameObject.CompareTag("EnemyCard") ? true : false;
+    }
+
+    private bool IsCardOverAnEnemyArea()
+    {
+        return gameObject.transform.parent.CompareTag("EnemyArea");
+    }
+
+    private GameObject CreateZoomCard()
+    {
+        return Instantiate(gameObject, new Vector2(Input.mousePosition.x, Input.mousePosition.y + 170),
+            Quaternion.identity);
     }
 
 }
