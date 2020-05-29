@@ -8,6 +8,8 @@ TagManager:
   - PlayerDropZone
   - EnemyDropZone
   - PlayerCard
+  - EnemyArea
+  - PlayerArea
   layers:
   - Default
   - TransparentFX
