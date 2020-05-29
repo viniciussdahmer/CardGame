@@ -1,6 +1,8 @@
 # UNRELEASED
 
 ## FIXED
+- Zoom no longer generates new attributes for the card - [#11](https://github.com/viniciussdahmer/CardGame/issues/11)
+- Now you can Zoom at enemy's card if they are in their Drop Zone - [#11](https://github.com/viniciussdahmer/CardGame/issues/11)
 
 ## CHANGED
 
