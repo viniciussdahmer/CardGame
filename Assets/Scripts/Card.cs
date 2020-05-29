@@ -16,18 +16,7 @@ public class Card : MonoBehaviour
 
     public void SetAttributes(bool isPlayerCard, GameObject parentArea)
     {
-        if (isPlayerCard)
-        {
-            gameObject.tag = PlayerCardTag;
-            gameObject.GetComponent<Image>().color = UnityEngine.Color.green;
-        }
-        else
-        {
-            gameObject.tag = EnemyCardTag;
-            gameObject.GetComponent<Image>().color = UnityEngine.Color.red;
-        }
-        gameObject.transform.SetParent(parentArea.transform, false);
-
+        SetGameObjectProperties(isPlayerCard, parentArea);
         SetCardAttributes();
         SetCardVisualProperties();
     }
@@ -36,6 +25,21 @@ public class Card : MonoBehaviour
     {
     }
 
+    private void SetGameObjectProperties(bool isPlayerCard, GameObject parentArea)
+    {
+        if (isPlayerCard)
+        {
+            gameObject.tag = PlayerCardTag;
+            gameObject.GetComponent<Image>().color = Color.green;
+        }
+        else
+        {
+            gameObject.tag = EnemyCardTag;
+            gameObject.GetComponent<Image>().color = Color.red;
+        }
+        gameObject.transform.SetParent(parentArea.transform, false);
+    }
+    
     private void SetCardAttributes()
     {
         _attack = Random.Range(1, 10);
