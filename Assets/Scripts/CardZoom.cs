@@ -31,7 +31,6 @@ public class CardZoom : MonoBehaviour
         rect.sizeDelta = new Vector2(162, 240);
     }
 
-
     private bool IsAnEnemyCard() {
         return gameObject.CompareTag("EnemyCard") ? true : false;
     }
