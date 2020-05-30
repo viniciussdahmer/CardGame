@@ -21,10 +21,6 @@ public class Card : MonoBehaviour
         SetCardVisualProperties();
     }
 
-    void Start()
-    {
-    }
-
     private void SetGameObjectProperties(bool isPlayerCard, GameObject parentArea)
     {
         if (isPlayerCard)

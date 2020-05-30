@@ -12,11 +12,6 @@ public class DrawCards : MonoBehaviour
     private static readonly int Color = Shader.PropertyToID("_Color");
     private const int MaxCardsToBeDrawn = 5;
 
-    void Start()
-    {
-        
-    }
-
     public void OnClick() {
         if (!_wasClicked) {
             DrawAllCards();
